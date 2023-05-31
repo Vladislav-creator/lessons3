@@ -260,6 +260,7 @@ body {
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-basis: calc((100%-72px) / 4);
 }
 .employees-text-content {
   padding: 32px 0;
@@ -444,7 +445,7 @@ body {
 }
 .customers-item {
   height: 88px;
-  width: calc((100%-24px) / 6);
+  flex-basis: calc((100%-120px) / 6);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -605,8 +606,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box {
-  position: relative;
+box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -635,12 +635,12 @@ body {
 .p-heart {
   position: absolute;
   color: #ffffff;
-  transform: translateY(-77%);
+  top: 288px;
   animation: BbgColor 2s linear infinite;
 }
 @keyframes BbgColor {
   0% {
-    font-size: 20px;
+    font-size: 10px;
   }
 
   50% {
@@ -648,7 +648,7 @@ body {
   }
 
   100% {
-    font-size: 20px;
+    font-size: 10px;
   }
 }
 .sun {
@@ -666,4 +666,29 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+.fox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-contacts {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  /* NAVY BLUE */
+  color: red;
+}
+
+.icon-menu {
+  fill: red;
+  display: block;
 }
